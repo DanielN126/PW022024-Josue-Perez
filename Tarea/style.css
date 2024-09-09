@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #d9534f;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #5bc0de;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Bandas Section */
+.bandas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.banda {
+    flex: 1 1 30%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.banda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a img {
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bandas {
+        flex-direction: column;
+    }
+
+    .banda {
+        margin-bottom: 20px;
+    }
+}
